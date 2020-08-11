@@ -1,0 +1,12 @@
+.textAlign{
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid #1C1E22;
+    padding-bottom: 2%;
+}
+h4{
+    font-size: 18px !important;
+}
+div p{
+    font-size: 14px;
+}

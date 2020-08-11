@@ -1,0 +1,118 @@
+.container{
+    margin: auto !important;
+    padding-right: 0 !important;
+    width: 65% !important;
+    color: #f7f7f7;
+}
+.textHead{
+    margin-top: 3%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.result{
+    margin-top: 3% !important; 
+    margin-bottom: 2% !important;
+    color: #999999 !important;
+}
+.input-group-text{
+    border-color: rgba(0, 0, 0, 0.6) !important;
+    border: 1px solid transparent !important;
+    border-radius: 4px !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    color: #ffffff !important;
+    background-color: #999999 !important;
+    background-image: -webkit-linear-gradient(#484e55, #3a3f44 60%, #313539) !important;
+}
+.btn-outline-secondary{
+    color: #ffffff !important;
+    background-image: linear-gradient(#8a9196, #7a8288 60%, #70787d);
+}
+
+.container_data{
+    border: 18px solid #1C1E22;
+    border-radius: 4px;
+    color: black !important;
+    background-color: #ffffff;
+    height: 400px;
+    overflow-y: scroll;
+}
+.wrapper {
+    text-align: center;
+}
+.glow-on-hover {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #272B30;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #272B30
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #272B30;
+    left: 0;
+    top: 0;
+    border-radius: 1px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.align{
+    padding-bottom: 34px;
+}
+
+.row{
+    color: #999999;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.centerAlign{
+    text-align: center;
+}
+p{
+    margin: 0 0 10px !important;
+}
